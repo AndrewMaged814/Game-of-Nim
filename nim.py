@@ -1,5 +1,6 @@
 import random
 from PIL import Image, ImageDraw, ImageFont
+import sys
 
 
 CHOOSE_BAG_STRING = 'select a bag: '
@@ -150,7 +151,7 @@ class Game:
                 self.play_game(players)
             elif answer.lower() == "no":
                 print("goodbye :)")
-                exit()
+                sys.exit()
             else:
                 print("Invalid input. Please enter yes or no.")
 
